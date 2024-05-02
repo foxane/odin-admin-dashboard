@@ -14,8 +14,9 @@ body {
     width: 100%;
 
     display: grid;
-    grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 4fr;
+    /* GOD I LOVE MINMAX */
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content) 1fr;
 }
 
 /* || Header */
@@ -82,6 +83,20 @@ body {
 .nav ul li {
     margin-top: 0.2em;
 }
+
+/* || Main */
 .main-content {
     background-color: #d6d3d3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* || Main | project */
+.projects {
+    display: grid;
+    grid-template-rows: 50px repeat(auto-fill,minmax(200px, 1fr)) ;
+    grid-template-columns: repeat(auto-fill, minmax(300px ,1fr))
+}
+.section-header {
+    grid-column: 1/-1;
 }
