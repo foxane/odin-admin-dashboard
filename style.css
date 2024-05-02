@@ -18,9 +18,32 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
+/* || Header */
 .header{
     background-color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
+.top {
+    display: grid;
+    grid-template-columns: min-content minmax(100px, 1fr) min-content max-content;
+    place-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+.top input {
+    width: 100%;
+}
+.user-info.smaller > *{
+    display: block;
+}
+.user-info.smaller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* || Sidebar */
 .sidebar {
     background-color: rgb(187, 187, 253);
     grid-row: 1/3;

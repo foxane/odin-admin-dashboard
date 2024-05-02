@@ -5,21 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/66a2552af2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="page-wrapper">
       <div class="header">
         <div class="top">
-          <p class="search-icon">S</p>
+          <p class="search-icon"><i class="fas fa-search"></i></p>
           <input type="text" />
-          <p class="notification-icon">N</p>
-          <p class="name">User icon and name</p>
+          <p class="notification-icon"><i class="far fa-bell"></i></p>
+          <div class="user-info smaller">
+            <img
+              class="user-icon"
+              src="./user-dummy.png"
+              alt="user icon"
+              width="50px"
+            />
+            <p class="user-name">Rafi Syaifulloh</p>
+          </div>
         </div>
         <div class="bottom">
           <div class="user-info">
-            <img class="user-icon" src="#" alt="User Icon" />
+            <img
+              class="user-icon"
+              src="./user-dummy.png"
+              alt="User Icon"
+              width="100px"
+            />
             <p class="greetings">Hello there,</p>
-            <p class="user-name">Foxane</p>
+            <p class="user-name">Rafi Syaifulloh (@foxane)</p>
           </div>
           <div class="buttons">
             <button type="button">New</button>
@@ -32,17 +49,62 @@
         <div class="logo">Dashboard</div>
         <div class="nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Task</a></li>
-            <li><a href="#">Communities</a></li>
+            <li>
+              <a href="#">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-id-card"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-message"></i>
+                Messages
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="fas fa-clock"></div>
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-file"></i>
+                Task
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-users"></i>
+                Communities
+              </a>
+            </li>
           </ul>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Messages</a></li>
+            <li>
+              <a href="#">
+                <i class="fas fa-gear"></i>
+                Settings
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-question"></i>
+                Support
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-shield"></i>
+                Privacy
+              </a>
+            </li>
           </ul>
         </div>
       </div>
