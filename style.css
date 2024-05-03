@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --clr-main: #0ea5e9;
+    --clr-secondary: #f59e0b;
+    --clr-bg:#eee;
+    --clr-bg-header: white;
+    --clr-bg-card: white;
+    --clr-sidebar-text: white;
+    --clr-text: black;
+}
+.page-wrapper {
+    background-color: var(--clr-bg);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: min-content 1fr;
+}
+.sidebar {
+    color: var(--clr-sidebar-text);
+    background-color: var(--clr-main);
+    grid-area: 1/1/-1/2;
+}
