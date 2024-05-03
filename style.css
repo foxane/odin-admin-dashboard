@@ -128,7 +128,7 @@ body {
 /* || Main content */
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -139,7 +139,7 @@ body {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: 50px;
+    grid-template-rows: min-content;
     grid-auto-rows: minmax(200px, 250px);
     gap: 20px;
 }
@@ -164,4 +164,32 @@ body {
     gap: 20px;
 }
 
-/* || Main  */
+/* || Main | Aside*/
+.aside {
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 20px;
+    font-size: 1rem;
+}
+.announcements {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-auto-rows: max-content;
+    gap: 25px;
+}
+.ann-container {
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(min-content, 1fr));
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 2px rgb(197, 196, 196);
+    padding: 20px;
+}
+.announcement-card {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.announcement-card:last-child {
+    border-bottom: none;
+}
