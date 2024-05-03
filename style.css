@@ -124,3 +124,44 @@ body {
 
     cursor: pointer;
 }
+
+/* || Main content */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.section-header {
+    grid-column: 1/-1;
+}
+/* || Main | Project */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: 50px;
+    grid-auto-rows: minmax(200px, 250px);
+    gap: 20px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    padding:40px 20px 20px 20px;
+    
+    display: grid;
+    grid-template-rows: 1fr 30px;
+
+    border-left: 10px solid var(--clr-secondary);
+    border-radius: 10px;
+    background-color: var(--clr-bg-card);
+    box-shadow: 5px 5px 15px 2px rgb(197, 196, 196);
+}
+.card-setting {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+/* || Main  */
