@@ -193,3 +193,14 @@ body {
 .announcement-card:last-child {
     border-bottom: none;
 }
+
+/* || Main | Aside | Trendings */
+.trendings {
+    display: grid;
+    gap: 25px;
+}
+.trending-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
